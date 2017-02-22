@@ -1,0 +1,48 @@
+/* COMMON.SASS */
+
+body
+  font-family: $sans-serif
+  font-size: 16px
+
+h1,h2,h3,h4,h5,h6
+  font-family: $sans-serif
+  text-transform: uppercase
+  font-weight: 800
+
+h2
+  font-size: 3em
+
+.wrapper
+  +outer-container
+
+header
+  +clearfix
+  padding: 40px 40px 0
+
+.brand
+  +hide-text
+  background-position: center
+  background-repeat: no-repeat
+  height: 125px
+  width: 125px
+  margin: 15px 0
+  float: left
+  background-image: url("../img/cafe-logo.png")
+  background-size: 125px 125px
+
+a
+  color: $primary-dark
+  border-bottom: solid 1px $primary-dark
+  &:hover
+    color: $primary-light
+
+section, aside, article
+  margin-top: 40px
+  margin-bottom: 40px
+  +clearfix
+
+#{$all-buttons}
+  font-family: $sans-serif
+  background: $secondary-light
+  &:hover
+    background: $secondary-dark
